@@ -95,7 +95,7 @@ server <- shinyServer(function(input, output) {
   
   
   output$mymap <- renderLeaflet({
-    leaflet() %>% addProviderTiles(providers$Stamen.TonerLite,
+    leaflet() %>% addProviderTiles(providers$OpenStreetMap,
                                     options = providerTileOptions(noWrap = TRUE))%>%
       setView(-83.10, 29.25, 13) %>%
       addMarkers(
