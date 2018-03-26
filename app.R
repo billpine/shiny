@@ -35,10 +35,10 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                          choices = list("Salinity (ppt)" = "Salinity",
                                         "Conductivity (mS/cm)"= "Conductivity",
                                         "Temperature (C)" = "Temperature"),
-                         selected = c("Salinity"))
-      #downloadButton("downloadPlot", "Download Plot"),
+                         selected = c("Salinity")),
+      downloadButton("downloadPlot", "Download Plot"),
       
-      #downloadButton("downloadData", "Download CSV")
+      downloadButton("downloadData", "Download CSV")
     ),
     
     mainPanel(
